@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="../../../../layout/custom_preview.xml" value="0.25" />
         <entry key="app/src/main/res/drawable/baseline_bookmark_border_black_24dp.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/baseline_favorite_black_24dp.xml" value="0.169" />
         <entry key="app/src/main/res/drawable/baseline_favorite_border_black_24dp.xml" value="0.169" />
@@ -16,11 +17,13 @@
         <entry key="app/src/main/res/drawable/outline_home_black_24dp.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/round_menu_black_24dp.xml" value="0.149" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.33" />
-        <entry key="app/src/main/res/layout/exp_page_search_view.xml" value="0.24270833333333333" />
-        <entry key="app/src/main/res/layout/fragment_explore_page.xml" value="0.24270833333333333" />
-        <entry key="app/src/main/res/layout/fragment_home_page.xml" value="0.33" />
-        <entry key="app/src/main/res/layout/list_tile_news_display.xml" value="0.23007246376811594" />
+        <entry key="app/src/main/res/layout/exp_page_search_view.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/fragment_countries_page.xml" value="0.34322916666666664" />
+        <entry key="app/src/main/res/layout/fragment_explore_page.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/fragment_home_page.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/list_tile_news_display.xml" value="0.5" />
         <entry key="app/src/main/res/layout/tile_news.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/view_category_card_view.xml" value="0.5" />
         <entry key="app/src/main/res/layout/view_news_of_the_day_constraint_layout.xml" value="0.33" />
         <entry key="app/src/main/res/menu/bottom_nav_menu.xml" value="0.3703125" />
       </map>

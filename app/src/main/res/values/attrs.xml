@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CustomCardLayout">
+        <attr name="cardText" format="string" />
+        <attr name="cardImageDrawable" format="reference"/>
+    </declare-styleable>
+</resources>

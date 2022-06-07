@@ -1,6 +1,138 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".ui.fragment.ExplorePageFragment"/>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="state"
+            type="com.harshilpadsala.newsapp.state.CategoryState" />
+    </data>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/primaryBackgroundColor">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/primaryBackgroundColor"
+            tools:context=".ui.fragment.ExplorePageFragment">
+
+            <com.harshilpadsala.newsapp.customviews.CustomCardLayout
+                android:id="@+id/technologyLayout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="16dp"
+                app:cardBackgroundColor="@color/primaryBackgroundColor"
+                app:cardImageDrawable="@drawable/ic_technology"
+                app:cardText="Technology"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/businessLayout" />
+
+            <com.harshilpadsala.newsapp.customviews.CustomCardLayout
+                android:id="@+id/entertaintmentLayout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="36dp"
+                android:layout_marginEnd="16dp"
+                app:cardBackgroundColor="@color/primaryBackgroundColor"
+                app:cardImageDrawable="@drawable/ic_entertaintment"
+                app:cardText="Entertaintment"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_weight="1"
+                app:layout_constraintStart_toEndOf="@+id/businessLayout"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.harshilpadsala.newsapp.customviews.CustomCardLayout
+                android:id="@+id/scienceLayout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="8dp"
+                app:cardBackgroundColor="@color/primaryBackgroundColor"
+                app:cardImageDrawable="@drawable/ic_science"
+                app:cardText="Science"
+                app:layout_constraintEnd_toStartOf="@+id/sportsLayout"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintHorizontal_weight="1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/technologyLayout" />
+
+            <com.harshilpadsala.newsapp.customviews.CustomCardLayout
+                android:id="@+id/sportsLayout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="16dp"
+                app:cardBackgroundColor="@color/primaryBackgroundColor"
+                app:cardImageDrawable="@drawable/ic_sports"
+                app:cardText="Sports"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintHorizontal_weight="1"
+                app:layout_constraintStart_toEndOf="@+id/scienceLayout"
+                app:layout_constraintTop_toBottomOf="@+id/technologyLayout" />
+
+            <com.harshilpadsala.newsapp.customviews.CustomCardLayout
+                android:id="@+id/healthLayout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="24dp"
+                app:cardBackgroundColor="@color/primaryBackgroundColor"
+                app:cardImageDrawable="@drawable/ic_health"
+                app:cardText="Health"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/generalLayout"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintHorizontal_weight="1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/scienceLayout" />
+
+            <com.harshilpadsala.newsapp.customviews.CustomCardLayout
+                android:id="@+id/generalLayout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="24dp"
+                app:cardBackgroundColor="@color/primaryBackgroundColor"
+                app:cardImageDrawable="@drawable/ic_general"
+                app:cardText="General"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_weight="1"
+                app:layout_constraintStart_toEndOf="@+id/healthLayout"
+                app:layout_constraintTop_toBottomOf="@+id/sportsLayout" />
+
+            <com.harshilpadsala.newsapp.customviews.CustomCardLayout
+                android:id="@+id/businessLayout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="36dp"
+                android:layout_marginEnd="8dp"
+                app:cardBackgroundColor="@color/primaryBackgroundColor"
+                app:cardImageDrawable="@drawable/ic_business"
+                app:cardText="Business"
+                app:layout_constraintEnd_toStartOf="@+id/entertaintmentLayout"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintHorizontal_weight="1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+            </com.harshilpadsala.newsapp.customviews.CustomCardLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+</layout>
