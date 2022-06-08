@@ -2,14 +2,18 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item android:title="Home"
         android:icon="@drawable/icon_home_menu"
-        android:id="@+id/Home"
+        android:id="@+id/homeFragment"
         />
+    <item android:title="Search"
+    android:icon="@drawable/baseline_search_black_24dp"
+    android:id="@+id/searchFragment"
+    />
     <item android:title="Explore"
-        android:id="@+id/List"
-        android:icon="@drawable/baseline_search_black_24dp"
+        android:id="@+id/listFragment"
+        android:icon="@drawable/ic_technology"
         />
     <item android:title="List"
         android:icon="@drawable/icon_explore_menu"
-        android:id="@+id/Explore"
+        android:id="@+id/tabBarFragment"
         />
 </menu>

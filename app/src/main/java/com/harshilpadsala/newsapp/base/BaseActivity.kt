@@ -2,6 +2,7 @@ package com.harshilpadsala.newsapp.base
 
 import android.os.Bundle
 import android.os.PersistableBundle
+import android.util.Log
 import androidx.annotation.LayoutRes
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.ViewDataBinding
@@ -13,14 +14,10 @@ abstract class BaseActivity<VM : BaseViewModel , VDB : ViewDataBinding>(@LayoutR
     abstract val viewmodel : VM
     protected lateinit var binding : VDB
 
-    override fun onCreate(savedInstanceState: Bundle?, persistentState: PersistableBundle?) {
-        super.onCreate(savedInstanceState, persistentState)
-
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
         binding = DataBindingUtil.setContentView(this, layoutId)
         binding.lifecycleOwner = this
-        binding.setVariable(BR.viewModel, viewmodel)
-
-
-
+        binding.setVariable(BR.viewModel,viewmodel)
     }
 }
