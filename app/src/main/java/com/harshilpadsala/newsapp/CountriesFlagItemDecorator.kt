@@ -21,5 +21,4 @@ class CountriesFlagItemDecorator(
         outRect.bottom = equalPaddingHeight
         outRect.top = equalPaddingHeight
     }
-
 }

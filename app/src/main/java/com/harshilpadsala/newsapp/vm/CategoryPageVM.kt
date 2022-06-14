@@ -1,10 +1,16 @@
 package com.harshilpadsala.newsapp.vm
 
-import androidx.lifecycle.ViewModel
+import com.harshilpadsala.newsapp.flows.SubmissionType
+import kotlinx.coroutines.flow.Flow
+import kotlinx.coroutines.flow.flow
 
-class CategoryPageVM : ViewModel() {
+class CategoryPageVM  {
+
+
 
     data class CategoryEmission(
         val category: String,
     )
+
+
 }

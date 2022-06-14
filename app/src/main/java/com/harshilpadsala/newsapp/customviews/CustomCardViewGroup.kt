@@ -3,22 +3,18 @@ package com.harshilpadsala.newsapp.customviews
 import android.annotation.SuppressLint
 import android.content.Context
 import android.util.AttributeSet
-import android.util.Log
 import android.view.View
-import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.cardview.widget.CardView
-import androidx.core.content.res.getDrawableOrThrow
 import com.google.android.material.button.MaterialButton
 import com.harshilpadsala.newsapp.R
-import com.harshilpadsala.newsapp.databinding.ViewCategoryCardViewBinding
-import com.harshilpadsala.newsapp.state.CategoryState
 
 @SuppressLint("ResourceType")
 class CustomCardLayout(
     context: Context,
-    attrs: AttributeSet)
+    attrs: AttributeSet,
+)
     : CardView(context, attrs){
         init {
             inflate(context , R.layout.view_category_card_view , this)
@@ -48,9 +44,6 @@ class CustomCardLayout(
                     unFollowButton.visibility = View.INVISIBLE
                     followButton.visibility = View.VISIBLE
                 }
-
-
-
             }
             finally {
                 customAttributesStyle.recycle()

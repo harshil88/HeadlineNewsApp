@@ -22,6 +22,7 @@
         <entry key="app/src/main/res/layout/fragment_explore_page.xml" value="0.25" />
         <entry key="app/src/main/res/layout/fragment_home_page.xml" value="0.25" />
         <entry key="app/src/main/res/layout/fragment_list.xml" value="0.223731884057971" />
+        <entry key="app/src/main/res/layout/fragment_news_detail.xml" value="0.25" />
         <entry key="app/src/main/res/layout/fragment_search.xml" value="0.223731884057971" />
         <entry key="app/src/main/res/layout/fragment_tab_bar.xml" value="0.28804347826086957" />
         <entry key="app/src/main/res/layout/list_tile_news_display.xml" value="0.5" />

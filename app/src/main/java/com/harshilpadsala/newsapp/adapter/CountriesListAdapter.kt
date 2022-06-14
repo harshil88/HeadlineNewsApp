@@ -38,13 +38,13 @@ class CountriesListAdapter(
                 .into(countryFlagImageView)
 
             followingButton.setOnClickListener {
-                followOnClick
+                followOnClick(countryModel)
                 followingButton.visibility = View.INVISIBLE
                 unFollowingButton.visibility = View.VISIBLE
             }
 
             unFollowingButton.setOnClickListener {
-                unFollowOnClick
+                unFollowOnClick(countryModel)
                 unFollowingButton.visibility = View.INVISIBLE
                 followingButton.visibility = View.VISIBLE
             }

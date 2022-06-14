@@ -60,7 +60,7 @@ class ViewPagerAdapter(fragment: Fragment) : FragmentStateAdapter(fragment){
 
     override fun createFragment(position: Int): Fragment {
 
-        Log.i("VPrun" , "THis is running")
+
         return when(position){
 
             0 -> ExplorePageFragment()
